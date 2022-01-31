@@ -1,0 +1,235 @@
+body {
+    background-color: #333333;
+    animation: fadein 1s;
+    color: white;
+}
+
+a {
+    color: white;
+    display: flex;
+}
+
+
+
+.menu{
+width: 100vw;
+height: 100vh;
+display: flex;
+margin: 0px;
+padding: 0px;
+}
+
+.hme, .cs, .rsm, .cn {
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+}
+
+.one {
+    background-color: #ef6c02;
+    display: flex;
+    flex-direction: row;
+}
+
+.two {
+    display: flex;
+    flex-direction: row;
+}
+
+.onep {
+    width: 300px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.one, .two, .three, .four {
+    width: 100vw;
+    display: flex;
+}
+
+/* #two:hover {
+    animation-name: hovering;
+    animation-duration: 1s; 
+    width: 130%;
+}
+
+#three:hover {
+    animation-name: hovering;
+    animation-duration: 1s; 
+    width: 130%;
+}
+
+#four:hover {
+    animation-name: hovering;
+    animation-duration: 1s; 
+    width: 130%;
+} */
+
+
+.hme {
+background-color: #ef6c02;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+display: flex;
+flex-direction: row;
+align-items:center;/*Vertical align*/
+justify-content:center;
+text-decoration: none;
+}
+
+.hme:hover {
+    cursor: default;
+}
+
+.cs {
+background-color: #d34335;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+display: flex;
+flex-direction: row;
+align-items:center;/*Vertical align*/
+justify-content:center;
+text-decoration: none;
+}
+
+/* #csLink {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+} */ 
+
+.cs:hover {
+    background-color: #333333;
+    font-size: 60px;
+    animation-name: change2;
+    animation-duration: .5s;
+    cursor: pointer;
+}
+
+.rsm {
+background-color: #66a338;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+display: flex;
+flex-direction: row;
+align-items:center;/*Vertical align*/
+justify-content:center;
+text-decoration: none;
+}
+
+.rsm:hover {
+    background-color: #333333;
+    font-size: 60px;
+    animation-name: change3;
+    animation-duration: .5s;
+    cursor: pointer;
+}
+
+.cn {
+background-color: #8a4297;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+display: flex;
+flex-direction: column;
+align-items:center;/*Vertical align*/
+justify-content:center;
+text-decoration: none;
+}
+
+.cn:hover {
+    background-color: #333333;
+    font-size: 60px;
+    animation-name: change4;
+    animation-duration: .5s;
+    cursor: pointer;
+}
+
+
+/* -------------------------------------------------------------------------------    */
+@keyframes change1 {
+    0% {background-color: #ef6c02; font-size: 50px;}
+    100% {background-color: #333333; font-size: 60px;}
+}
+
+@keyframes change2 {
+    0% {background-color: #d34335; font-size: 50px;}
+    100% {background-color: #333333; font-size: 60px;}
+}
+
+@keyframes change3 {
+    0% {background-color: #66a338; font-size: 50px;}
+    100% {background-color: #333333; font-size: 60px;}
+}
+
+@keyframes change4 {
+    0% {background-color: #8a4297; font-size: 50px;}
+    100% {background-color: #333333; font-size: 60px;}
+}
+
+/* @keyframes changeNone1 {
+    0% {background-color: #ef6c02; font-size: 50px;}
+    100% {background-color: #ef6c02; font-size: 50px;}
+}
+
+@keyframes changeNone2 {
+    0% {background-color: #d34335; font-size: 50px;}
+    100%{background-color: #d34335; font-size: 50px;}
+}
+@keyframes changeNone3 {
+    0% {background-color: #66a338; font-size: 50px;}
+    100%{background-color: #66a338; font-size: 50px;}
+}
+@keyframes changeNone4 {
+    0% {background-color: #8a4297; font-size: 50px;}
+    100%{background-color: #8a4297; font-size: 50px;}
+} */
+
+
+@keyframes hovering {
+    0% {width: 100%;}
+    100% {width: 130%; background-color: #333333;}
+}
+
+@keyframes hoveringOff {
+    0% {width: 130%; background-color: #333333;}
+    100%{width:100%; background-color: #d34335;}
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+      flex-direction: column;
+    }
+
+    a {
+        height: 60vh;
+        align-items: center;
+    }
+
+    .one, .two, .three, .four, .rsm, .cn {
+        height: 60vh;
+    }
+  }
+
+@media (hover: none) {
+.cs:hover {
+    animation: none;
+}
+}
+
+
