@@ -15,7 +15,7 @@ function include_styles()
     wp_enqueue_style('unique id or name like google-fonts', 'url to the file');
 
     //example of including a style local to your theme root
-    wp_enqueue_style('idm250-css', get_template_directory_uri() . '/dist/styles/main.css');
+    wp_enqueue_style('idm250-css', get_template_directory_uri() . '/dist/styles/header.css');
 }
 
 // when wp perfoms this action, call our function
@@ -27,10 +27,12 @@ add_action('wp_enqueue_scripts', 'include_styles');
  */
 
  function include_js_files() {
-     wp_enqueue_script('idm250-js', get_template_directory_uri() . '/dist/scripts/main.js', 
+    wp_enqueue_script('idm250-js', 
+    get_template_directory_uri() . '/dist/scripts/main.js', 
     [],
     false, 
-    true); 
+    true
+    ); 
  }
 
  // when wp performs this action, call our function
@@ -51,3 +53,24 @@ add_action('wp_enqueue_scripts', 'include_styles');
   }
 
   add_action('after_setup_theme', 'register_theme_navigation');
+
+
+
+function idm_render_menu($menu_name)
+{
+    if (!$menu_name) {
+        return;
+    }
+    // return an array of menu locations that are registered
+    $locations = get_nav_menu_locations();
+    $menu = wp_get_nav_menu_object($locations[$menu_name]);
+    $menu_items = wp_get_nav_menu_items($menu->term_id, ['order' => 'DESC']);
+    return $menu_items;
+}
+
+function add_post_thumbnails_support()
+{
+    add_theme_support('post-thumbnails');
+}
+
+add_action('after_setup_theme', 'add_post_thumbnails_support');

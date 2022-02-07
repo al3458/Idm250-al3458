@@ -1,25 +1,16 @@
 body {
     background-color: #333333;
     animation: fadein 1s;
-    color: white;
 }
 
-a {
-    color: white;
-    display: flex;
-}
-
-
-
-.menu{
+.main {
 width: 100vw;
 height: 100vh;
 display: flex;
-margin: 0px;
-padding: 0px;
+
 }
 
-.hme, .cs, .rsm, .cn {
+#hme, #cs, #rsm, #cn {
     height: 100vh;
     width: 100%;
     margin: 0px;
@@ -28,18 +19,18 @@ padding: 0px;
     outline: 0px;
 }
 
-.one {
+#one {
     background-color: #ef6c02;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.two {
+#two {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.onep {
+#onep {
     width: 300px;
     color: white;
     font-family: 'Titillium Web', sans-serif;
@@ -47,7 +38,7 @@ padding: 0px;
     text-align: center;
 }
 
-.one, .two, .three, .four {
+#one, #two, #three, #four {
     width: 100vw;
     display: flex;
 }
@@ -71,29 +62,29 @@ padding: 0px;
 } */
 
 
-.hme {
+#hme {
 background-color: #ef6c02;
 color: white;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 50px;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items:center;/*Vertical align*/
 justify-content:center;
 text-decoration: none;
 }
 
-.hme:hover {
+#hme:hover {
     cursor: default;
 }
 
-.cs {
+#cs {
 background-color: #d34335;
 color: white;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 50px;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items:center;/*Vertical align*/
 justify-content:center;
 text-decoration: none;
@@ -107,7 +98,7 @@ text-decoration: none;
     height: 100vh;
 } */ 
 
-.cs:hover {
+#cs:hover {
     background-color: #333333;
     font-size: 60px;
     animation-name: change2;
@@ -115,19 +106,19 @@ text-decoration: none;
     cursor: pointer;
 }
 
-.rsm {
+#rsm {
 background-color: #66a338;
 color: white;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 50px;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items:center;/*Vertical align*/
 justify-content:center;
 text-decoration: none;
 }
 
-.rsm:hover {
+#rsm:hover {
     background-color: #333333;
     font-size: 60px;
     animation-name: change3;
@@ -135,7 +126,7 @@ text-decoration: none;
     cursor: pointer;
 }
 
-.cn {
+#cn {
 background-color: #8a4297;
 color: white;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -147,7 +138,7 @@ justify-content:center;
 text-decoration: none;
 }
 
-.cn:hover {
+#cn:hover {
     background-color: #333333;
     font-size: 60px;
     animation-name: change4;
@@ -212,24 +203,17 @@ text-decoration: none;
 }
 
 @media only screen and (max-width: 500px) {
-    .menu {
+    .main {
       flex-direction: column;
     }
 
-    a {
-        height: 60vh;
-        align-items: center;
-    }
-
-    .one, .two, .three, .four, .rsm, .cn {
+    #one, #two, #three, #four, #rsm, #cn {
         height: 60vh;
     }
   }
 
 @media (hover: none) {
-.cs:hover {
+#cs:hover {
     animation: none;
 }
 }
-
-
