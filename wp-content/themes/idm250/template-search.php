@@ -3,12 +3,12 @@
 ?>
 
 
-<?php get_header(); ?>
+<?php get_header('resume'); ?>
 
 this is a custom search template.
 
 <?php while (have_posts()) : the_post(); ?>
-<div class="" style="">
+<div class="" style="background-color:#66a338;">
     <h1 class="" style="width: 300px;"><?php the_title(); ?> </h1>
 
     <?php the_post_thumbnail(); ?>
