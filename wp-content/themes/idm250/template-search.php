@@ -3,21 +3,31 @@
 ?>
 
 
+
 <?php get_header('resume'); ?>
 
 this is a custom search template.
 
-<?php while (have_posts()) : the_post(); ?>
-<div class="" style="background-color:#66a338;">
-    <h1 class="" style="width: 300px;"><?php the_title(); ?> </h1>
+<?php 
 
-    <?php the_post_thumbnail(); ?>
+    $search_word = $_GET['s'];
+    $post_type = $_GET['post_type'];
 
-    <div class="" style="width: 80%; margin:auto; line-height: 1.5; font-size:24px;">
-        <?php the_content(); ?>
-    </div>
+    $args = [
+        's' => $search_word,
+        'post_type' => $post_type,
+    ]
+
+
+    $search_query = new WP_Query($args)
+
+?>
+
+<h1>Search results for "<?php echo $search_word; ?>"</h1>
+
+<?php while ($search_query->have_posts()) : $search_query->the_post();?>
+<div class="works__column">
+    <h2><a href="<?php the_permalink(); ?>"></a></h2>
 </div>
-<?php endwhile; ?>
-
 
 <?php get_footer(); ?>

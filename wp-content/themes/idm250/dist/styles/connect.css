@@ -1,0 +1,16 @@
+body {
+    background-color: #8a4297;
+    color: white;
+    animation: fadein 2s;
+}
+
+.customize-support{
+    background-color: #8a4297;
+
+}
+
+.content {
+    border: 2px solid #fff;
+    margin: 30px 50px;
+    animation: fadein 3s;
+}

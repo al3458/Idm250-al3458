@@ -18,22 +18,22 @@
 </head>
 <body>
 <div class="main">
-        <img src="http://localhost:8888/wp-content/uploads/2022/01/logo.png" alt="brandLogo" style="width: 100px; height: 70px; position: fixed; margin: 1%;">
+        <img src="https://andrewlenehan.com/idm-250/wp-content/uploads/2022/01/logo.png" alt="brandLogo" style="width: 100px; height: 70px; position: fixed; margin: 1%;">
         <div id="one">
             <a id="hme" href="javascript:void(0)">Home <hr style="width: 140px; border: 1px solid white;"> <p id="onep">Welcome to the website of Andrew Lenehan, User Experience Designer</p></a>
             
         </div>
 
         <div id="two" onmouseover="myFunction()" onmouseout="myThirdFunction()">
-            <a id="cs" href="http://localhost:8888/portfolio/">Portfolio<hr style="width: 140px; border: 1px solid white;"> <p id="onep">See my thought process and progress on different projects</p></a>
+            <a id="cs" href="https://andrewlenehan.com/idm-250/portfolio/">Portfolio<hr style="width: 140px; border: 1px solid white;"> <p id="onep">See my thought process and progress on different projects</p></a>
         </div>
 
         <div id="three" onmouseover="myFunction2()" onmouseout="myThirdFunction2()">
-            <a id="rsm" href="http://localhost:8888/resume/">Resume <hr style="width: 140px; border: 1px solid white;"> <p id="onep">Check my qualifications and see what I have to offer</p></a>
+            <a id="rsm" href="https://andrewlenehan.com/idm-250/resume/">Resume <hr style="width: 140px; border: 1px solid white;"> <p id="onep">Check my qualifications and see what I have to offer</p></a>
         </div>
 
         <div id="four" onmouseover="myFunction3()" onmouseout="myThirdFunction3()">
-            <a id="cn" href="http://localhost:8888/connect/">Connect <hr style="width: 140px; border: 1px solid white;"> <p id="onep">Connect with me and start something great</p></a>
+            <a id="cn" href="https://andrewlenehan.com/idm-250/connect/">Connect <hr style="width: 140px; border: 1px solid white;"> <p id="onep">Connect with me and start something great</p></a>
         </div>
     </div>
     <!-- <img src="https://andrewlenehan.com/idm-250/wp-content/uploads/2022/01/logo.png" alt="logo" style="width: 100px; height: 70px; position: fixed; margin: 1%;"> -->

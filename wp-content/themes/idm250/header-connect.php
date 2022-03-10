@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title(); ?></title>
-    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/dist/styles/header.css' ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/dist/styles/connect.css' ?>">
 
 
     <?php
@@ -24,7 +24,7 @@
     <div class="topnav">
         <div class="navbar">
             <div id="logo">
-                <a id="imglink" href="https://andrewlenehan.com/idm-250/"><img src="https://andrewlenehan.com/idm-250/wp-content/uploads/2022/01/logo.png" alt="Brand Logo" style="width: 100px; height: 70px;"></a>
+                <a id="imglink" href="http://localhost:8888/"><img src="https://andrewlenehan.com/idm-250/wp-content/uploads/2022/01/logo.png" alt="Brand Logo" style="width: 100px; height: 70px;"></a>
                 <hr style="height: 60px; border: 1px solid white;">
                 <div id="names">
                     <h2>Andrew Lenehan</h2>
@@ -33,10 +33,10 @@
             </div>
 
             <nav role="navigation" class="nav">
-                <a class="navlinks" href="https://andrewlenehan.com/idm-250/" style="max-width: 940px;">Home</a>
-                <a class="navlinks" href="https://andrewlenehan.com/idm-250/portfolio/" style="max-width: 940px;">Portfolio</a>
-                <a class="navlinks" href="https://andrewlenehan.com/idm-250/resume/" style="max-width: 940px;">Resume</a>
-                <a class="navlinks" href="https://andrewlenehan.com/idm-250/connect/" style="max-width: 940px;">Connect</a>
+                <a class="navlinks" href="http://localhost:8888/" style="max-width: 940px;">Home</a>
+                <a class="navlinks" href="http://localhost:8888/portfolio/" style="max-width: 940px;">Portfolio</a>
+                <a class="navlinks" id="active" href="http://localhost:8888/resume/" style="max-width: 940px;">Resume</a>
+                <a class="navlinks" href="http://localhost:8888/connect/" style="max-width: 940px;">Connect</a>
             </nav>
 
             <div id="menuToggle">
@@ -62,4 +62,3 @@
             </div>
         </div>
     </div>
-
