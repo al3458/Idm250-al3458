@@ -20,8 +20,9 @@ body{
 }
 
 a{
+    padding: 10px;
     background-color: #d34335;
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 34px;
     margin: 20px;
 }

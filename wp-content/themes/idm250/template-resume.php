@@ -4,11 +4,11 @@
 
 <?php get_header('resume'); ?>
 
-this is a custom narrow template.
+resume
 
 <?php while (have_posts()) : the_post(); ?>
-<div class="" style="width: 300px;">
-    <h1 class="" style="width: 300px;"><?php the_title(); ?> </h1>
+<div class="content" style="">
+    <h1 class="" style=""><?php the_title(); ?> </h1>
 
     <?php the_post_thumbnail(); ?>
 

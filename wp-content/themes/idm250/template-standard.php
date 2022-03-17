@@ -1,14 +1,13 @@
 <?php
-/* Template Name: single */
+/* Template Name: standard */
 ?>
 
 
-<?php get_header(); ?>
+<?php get_header('standard'); ?>
 
-this is a custom single template.
 
 <?php while (have_posts()) : the_post(); ?>
-<div class="" style="">
+<div class="content" style="">
     <h1 class="" style="text-align: center;"><?php the_title(); ?> </h1>
 
     <?php the_post_thumbnail(); ?>

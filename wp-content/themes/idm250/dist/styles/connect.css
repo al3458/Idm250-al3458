@@ -14,3 +14,64 @@ body {
     margin: 30px 50px;
     animation: fadein 3s;
 }
+
+p, h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 8.125rem;
+}
+
+#mainTitle {
+    animation: spin 2s;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.titledesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Texgyreadventor, sans-serif;
+    margin-bottom: 60px;
+    line-height: 1.3;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+#mail, #instagram, #linkedin {
+    flex-direction: column;
+    width: 300px;
+    font-family: Texgyreadventor, sans-serif;
+}
+
+#noFloat, #noFloat1 {
+    float: none;
+    text-decoration: underline;
+}
+
+#linkimg:hover, #linkimg2:hover, #linkimg3:hover{
+    width: 70px; 
+    height: 70px; 
+    opacity: .5; 
+    padding: 15px 0px;
+}
+
+#linkimg, #linkimg2, #linkimg3 {
+    padding: 20px 0px;
+    width: 60px;
+    height: 60px;
+}
+
+@keyframes spin {
+    from {transform: matrix(.5, -0.3, 0, .5, 0, 0);}
+    to {transform: matrix(1, 0, 0, 1, 0, 0);}
+}

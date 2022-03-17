@@ -1,0 +1,67 @@
+body {
+    background-color: #d34335;
+    color: white;
+    animation: fadein 2s;
+}
+
+.customize-support{
+    background-color: #d34335;
+
+}
+
+.content {
+    border: 2px solid #fff;
+    margin: 30px 50px;
+    animation: fadein 3s;
+    background-color: #181818;
+}
+
+p, h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 8.125rem;
+    color: #d34335;
+    text-shadow: -3px 2px 2px #FFFFFF;
+}
+
+#mainTitle {
+    animation: spin 2s;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.all h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;
+    color: #d34335;
+}
+
+.all p {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+}
+
+.all {
+    margin: 50px;
+}
+
+.wp-block-button {
+    padding: 20px;
+}
+
+.return {
+    float: none;
+    /* margin: 20px; */
+    position: absolute;
+    padding: 10px;
+    margin: 50px;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 40px; 
+}

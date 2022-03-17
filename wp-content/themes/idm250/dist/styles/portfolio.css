@@ -1,0 +1,89 @@
+body {
+    background-color: #d34335;
+    color: white;
+    animation: fadein 2s;
+}
+
+.customize-support{
+    background-color: #d34335;
+
+}
+
+.content {
+    border: 2px solid #fff;
+    margin: 30px 50px;
+    animation: fadein 3s;
+}
+
+p, h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 8.125rem;
+}
+
+#mainTitle {
+    animation: spin 2s;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.block-image {
+    max-width: 30%;
+}
+
+.one, .two, .three {
+    height: 300px;
+}
+
+.two {
+    display: flex;
+    text-align: left;
+}
+
+.three {
+    background-color: #b63a2f;
+    display: flex;
+    align-items: center;
+}
+
+.main p {
+    margin: auto;
+    font-size: 18px;
+    font-family: Texgyreadventor, sans-serif;
+}
+
+.main a{
+    margin-right: 50%;
+    margin-top: 20px;
+}
+
+.one {
+    background-color: #b63a2f;
+    display: flex;
+}
+
+.secondP {
+    text-align: left;
+}
+
+.p1, .p2, .p3 {
+    text-align: left;
+    margin: auto;
+    padding: 15px;
+}
+
+@keyframes spin {
+    from {transform: scale(1.5);}
+    to {transform: scale(1);}
+  }

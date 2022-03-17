@@ -17,7 +17,7 @@
     <h1 class="numbers">404</h1>
     <h1 class="text">This page has spontaneously combusted...</h1>
     <h1 class="text">Just kidding, it never existed.</h1>
-    <a href="">Go Back Home</a>
+    <a href="https://andrewlenehan.com/idm-250/">Go Back Home</a>
     </div>
 
 </body>
