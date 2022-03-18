@@ -31,7 +31,7 @@ get_template_part(
       wp_reset_postdata();
   } else {
       // no results
-      echo '<p>Sorry, there are no results</p>';
+    //   echo '<p>Sorry, there are no results</p>';
   }
 
 ?>
